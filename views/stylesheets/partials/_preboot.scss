@@ -33,7 +33,7 @@ $basefont:          13px;
 $baseline:          18px;
 
 // Griditude
-$gridColumns:       16;
+$gridColumns:       15;
 $gridColumnWidth:   40px;
 $gridGutterWidth:   20px;
 $extraSpace:        40px;
@@ -168,7 +168,7 @@ $analog2:           adjust-hue($baseColor, -22);
   line-height: $lineHeight;
 }
 @mixin serif-font($weight: normal, $size: 14px, $lineHeight: 20px) {
-  font-family: "Georgia", Times New Roman, Times, serif;
+  font-family: "Crimson Text", serif;
   font-size: $size;
   font-weight: $weight;
   line-height: $lineHeight;

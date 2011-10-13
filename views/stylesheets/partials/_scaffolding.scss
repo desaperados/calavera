@@ -74,16 +74,16 @@ html, body {
 }
 body {
   margin: 0;
-  @include sans-serif-font(normal,$basefont,$baseline);
+  @include serif-font(normal,$basefont,$baseline);
   color: $gray;
   text-rendering: optimizeLegibility;
 }
 
 // Container (centered, fixed-width layouts)
-.container {
-  width: 940px;
-  margin: 0 auto;
-}
+//.container {
+//  width: 940px;
+//  margin: 0 auto;
+//}
 
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 .container-fluid {
