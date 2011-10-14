@@ -6,6 +6,7 @@ p.intro {
   height: auto !important;
   height: 80px;
   border-top: 5px solid $grayLight;
+  margin-bottom: $baseline/2;
   padding-top: $baseline/2;
 }
 
@@ -22,8 +23,14 @@ p.intro {
 }
 .hero-unit {
   margin-top: 60px;
+  padding: 30px 60px;
   h1 {
     margin-bottom: 0.5em;
+  }
+  ul li {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 27px; 
   }
 }
 .masthead {
@@ -31,6 +38,7 @@ p.intro {
   text-align: center;
   background: $grayLighter;
   border-bottom: 1px solid $grayLighty;
+  margin-bottom: $baseline;
   @include vertical-gradient($grayLighty, $grayLighter);
   .container {
     padding: $baseline*2 0;
@@ -38,12 +46,31 @@ p.intro {
   p {
     font-size: 20px;
     line-height: 27px;
+    color: $grayDark;
   }
 }
 .portfolio {
   h2 {
     text-align: center;
     margin-bottom: $baseline/2;
-    margin-top: $baseline;
+  }
+}
+.footer {
+  margin-top: $baseline*2;
+  @include sans-serif-font(normal,12px,$baseline);
+  @include vertical-three-colors-gradient($grayLighter, white, 50%, white);
+  padding-bottom: $baseline*2;
+  p {
+    font-size: 12px;
+    color: $grayLight;
+    a {
+      color: $gray;
+    }
+    a:hover {
+      color: $linkColor;
+    }
+  }
+  p.copy {
+    color: $grayLight;
   }
 }
