@@ -6,24 +6,26 @@ Bundler.require
 require './app.rb'
 
 configure do
-  set :scss, {:style => :compressed, :debug_info => false}
-  #Compass.add_project_configuration(File.join(Sinatra::Application.root, 'config', 'compass.rb'))
-  #sass_dir = File.join 'views', 'stylesheets'
-  #images_dir = File.join 'public', 'images'
-  #http_path = "/"
-  #http_images_path = "/images"
-  #http_stylesheets_path = "/stylesheets"
+  set :sass, {:style => :compressed, :debug_info => false}
+
+  Compass.configuration do |config|
+    config.output_style = :compact 
+    config.line_comments =false 
+    config.sass_dir = File.join('views', 'stylesheets')
+    config.images_dir = File.join('public', 'images')
+    config.http_path = "/"
+    config.http_images_path = "/images"
+    config.http_stylesheets_path = "/stylesheets"
+  end
+
+  set :sass, Compass.sass_engine_options 
 end
 
-Compass.configuration do |config|
-  config.output_style = :compressed 
-  config.line_comments = true
-end
-
-require 'sass/plugin/rack'
-use Sass::Plugin::Rack
-
+# Sass on Heroku
 configure :production do
+  require 'sass/plugin/rack'
+
+  use Sass::Plugin::Rack
   use Rack::Static,
       urls: ['stylesheets'],
       root: File.expand_path('../tmp', __FILE__)
