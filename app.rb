@@ -1,4 +1,8 @@
 class Calavera < Sinatra::Base
+  
+  before do
+    cache_control :public, :max_age => 14515200 # 6 months
+  end
 
   get '/' do
     @title = "Calavera Construction Co."
