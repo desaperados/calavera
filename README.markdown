@@ -1,2 +1,2 @@
-# Sinatra Template
-A bare Sinatra application set up to use sass, compass, twitter bootstrap and JQuery
+# Calavera
+Simple Sinatra app for Calavera Construction Co. web content
