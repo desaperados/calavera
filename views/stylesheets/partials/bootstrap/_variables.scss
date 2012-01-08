@@ -1,9 +1,13 @@
 /* Variables.less
  * Variables to customize the look and feel of Bootstrap
  * ----------------------------------------------------- */
+ 
+$siteText: #b1b2b3;
+$siteBackground: #424242;
+$siteFooter: #313131;
 
 // Links
-$linkColor:         #0069d6;
+$linkColor:         #fff;
 $linkColorHover:    darken($linkColor, 15);
 
 // Grays
@@ -26,12 +30,12 @@ $pink:              #c3325f;
 $purple:            #7a43b6;
 
 // Baseline grid
-$basefont:          14px;
+$basefont:          12px;
 $baseline:          19px;
 
 // Griditude
 // Modify the grid styles in mixins.less
-$gridColumns:       15;
+$gridColumns:       16;
 $gridColumnWidth:   40px;
 $gridGutterWidth:   20px;
 $extraSpace:        ($gridGutterWidth * 2); // For our grid calculations

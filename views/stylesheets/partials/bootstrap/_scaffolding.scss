@@ -8,12 +8,13 @@
 // -----------------
 
 html, body {
-  background-color: $white;
+  background: $siteFooter;
 }
 body {
   margin: 0;
-  @include serif-font(normal,$basefont,$baseline);
-  color: $grayDark;
+  @include sans-serif-font(normal,$basefont,$baseline);
+  background: $siteBackground;
+  color: $siteText;
 }
 
 // Container (centered, fixed-width layouts)

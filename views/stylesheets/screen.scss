@@ -1,64 +1,60 @@
 @import "partials/bootstrap";
 
-p.intro {
-  display: block;
-  min-height: 80px;
-  height: auto !important;
-  height: 80px;
-  border-top: 5px solid $grayLight;
-  margin-bottom: $baseline/2;
-  padding-top: $baseline/2;
+.logo {
+  height: 150px;
+  text-align: center;
 }
 
-.topbar {
-  img {
-    float: right;
-    margin-right: 10px;
-    height: 36px;
-    margin-top: 1px;
+ul.menu {
+  list-style: none;
+  margin: 0;
+  width: 150px;
+  a {
+    color: $siteText;
+  }
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  li {
+    margin-bottom: 1em;
   }
 }
-.dropdown-menu {
-  width: 250px;
+
+ul.primary {
+  margin-top: 150px;
 }
-.hero-unit {
-  margin-top: 60px;
-  padding: 30px 60px;
-  h1 {
-    margin-bottom: 0.5em;
-  }
-  ul li {
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 27px; 
-  }
+
+ul.secondary {
+  margin-top: 1.2em;
+  padding-top: 1.2em;
+  border-top: 1px solid $siteText;
 }
+
 .masthead {
-  padding-top: 40px;
-  text-align: center;
-  border-bottom: 1px solid $grayLighty;
-  margin-bottom: $baseline;
-  @include vertical-gradient(#555, #111);
-  .container {
-    padding: $baseline*2 0;
+  @include border-radius(6px);
+  background-color: darken($siteBackground, 2%);
+  border: 1px solid lighten($siteBackground, 5%);
+  margin-bottom: 2em;
+  padding: 2em 2em 1em 2em;
+  h1 {
+    
   }
   p {
-    font-size: 20px;
-    line-height: 27px;
-    color: #999;
+    font-size: 14px;
+    line-height: 1.6em;
   }
 }
-.portfolio {
-  h2 {
-    text-align: center;
-    margin-bottom: $baseline/2;
-  }
+
+.hero p {
+  text-align: center;
 }
+
 .footer {
   margin-top: $baseline*2;
-  @include sans-serif-font(normal,12px,$baseline);
-  @include vertical-three-colors-gradient(#111, #111, 50%, #333);
   padding-bottom: $baseline*2;
+  background: $siteFooter;
+  border-top: 1px solid #000;
   p {
     font-size: 12px;
     color: $grayLight;

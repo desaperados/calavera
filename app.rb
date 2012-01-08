@@ -30,8 +30,13 @@ class Calavera < Sinatra::Base
   end
   
   get '/crates' do
-    @title = "Calavera: Crate-making"
+    @title = "Calavera: Cratemaking"
     erb :crates
+  end
+  
+  get '/consultation' do
+    @title = "Calavera: Project Consultation"
+    erb :consultation
   end
   
   get '/about' do
