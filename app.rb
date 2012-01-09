@@ -15,22 +15,22 @@ class Calavera < Sinatra::Base
   end
   
   get '/installation' do
-    @title = "Calavera: Building & Installation"
+    @title = "Calavera: Building and Installation"
     erb :installation
   end
   
   get '/exhibition' do
-    @title = "Calavera: Exhibition & Display Furniture"
+    @title = "Calavera: Exhibition Furniture"
     erb :exhibition
   end
   
   get '/art' do
-    @title = "Calavera: Art Handling & Installation"
+    @title = "Calavera: Art Handling and Installation"
     erb :art
   end
   
   get '/crates' do
-    @title = "Calavera: Cratemaking"
+    @title = "Calavera: Crate Making"
     erb :crates
   end
   

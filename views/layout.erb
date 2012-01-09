@@ -21,10 +21,10 @@
             <div class="span4">
                 <ul class="menu primary">
                     <li><a href="/project">Project Construction</a></li>
-                    <li><a href="/installation">Building Installation</a></li>
-                    <li><a href="/exhibition">Exhibition &amp; Display Furniture</a></li>
-                    <li><a href="/art">Art Handling &amp; Installation</a></li>
-                    <li><a href="/crates">Cratemaking</a></li>
+                    <li><a href="/installation">Building and Installation</a></li>
+                    <li><a href="/exhibition">Exhibition Furniture</a></li>
+                    <li><a href="/art">Art and Object Installation</a></li>
+                    <li><a href="/crates">Crate Making</a></li>
                     <li><a href="/consultation">Project Consultation</a></li>
                 </ul>
                 
@@ -36,7 +36,7 @@
             </div>
             <div class="span12">
                 <div class="logo">
-                    Logo goes here
+                    <img src="/images/banner.png" />
                 </div>
                 <%= yield %>
             </div>
@@ -44,22 +44,29 @@
     </div>
 
     <footer class="footer">
-      <div class="container">
-        <p> 
-            <a href="/">Home</a> |
-            <a href="/about">About</a> |
-            <a href="/contact">Contact</a>
-        </p>
-        <p>
-            <a href="/project">Project Construction</a> |
-            <a href="/installation">Building &amp; Installation</a> |
-            <a href="/exhibition">Exhibition &amp; Display Furniture</a> |
-            <a href="/art">Art Handling &amp; Installation</a> |
-            <a href="/crates">Cratemaking</a> | 
-            <a href="/consultaion">Project Consultation</a>
-        </p>
-        <p class="copy">&copy; Calavera 2011</p>
-      </div>
+        <div class="container">
+          <div class="row">
+              <div class="span4">
+                  &nbsp;
+              </div>
+              <div class="span12">
+                  <p> 
+                      <a href="/">Home</a> |
+                      <a href="/about">About</a> |
+                      <a href="/contact">Contact</a>
+                  </p>
+                  <p>
+                      <a href="/project">Project Construction</a> |
+                      <a href="/installation">Building and Installation</a> |
+                      <a href="/exhibition">Exhibition Furniture</a> |
+                      <a href="/art">Art and Object Installation</a> |
+                      <a href="/crates">Crate Making</a> | 
+                      <a href="/consultaion">Project Consultation</a>
+                  </p>
+                  <p class="copy">&copy; Calavera <%= DateTime.now.year %></p>
+              </div>
+          </div>
+        </div>
     </footer
   </body>
 </html>

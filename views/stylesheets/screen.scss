@@ -1,8 +1,11 @@
 @import "partials/bootstrap";
 
+body {
+  @include vertical-three-colors-gradient(#2e2e2e, #2e2e2e, 20%, #555)
+}
+
 .logo {
-  height: 150px;
-  text-align: center;
+  padding: 1em 0;
 }
 
 ul.menu {
@@ -41,7 +44,7 @@ ul.secondary {
     
   }
   p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6em;
   }
 }
@@ -56,13 +59,14 @@ ul.secondary {
   background: $siteFooter;
   border-top: 1px solid #000;
   p {
-    font-size: 12px;
+    font-size: 11px;
     color: $grayLight;
     a {
       color: $gray;
     }
     a:hover {
       color: $linkColor;
+      text-decoration: none;
     }
   }
   p.copy {
