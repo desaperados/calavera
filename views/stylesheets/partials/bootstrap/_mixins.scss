@@ -46,12 +46,13 @@
 
 // Font Stacks
 @mixin shorthand-font($weight: normal, $size: 14px, $lineHeight: 20px) {
+  font-family: "Droid Sans", Arial, sans-serif;
   font-size: $size;
   font-weight: $weight;
   line-height: $lineHeight;
 }
 @mixin sans-serif-font($weight: normal, $size: 14px, $lineHeight: 20px) {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   font-size: $size;
   font-weight: $weight;
   line-height: $lineHeight;

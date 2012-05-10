@@ -1,17 +1,32 @@
 @import "partials/bootstrap";
 
 body {
+  font-family: "Droid Sans", Arial, sans-serif;
   @include vertical-three-colors-gradient(#2e2e2e, #2e2e2e, 20%, #555)
 }
 
+h1, h2 {
+  color: lighten(#000, 80%);
+  a {
+    color: lighten(#000, 80%) !important;
+  }
+  a:hover {
+    text-decoration: none;
+    color: lighten(#000, 60%) !important;
+  }
+}
+
 .logo {
-  padding: 1em 0;
+  padding: 2em 0 2em 1.3em;
+  height: 100px;
+  text-align: left;
 }
 
 ul.menu {
   list-style: none;
   margin: 0;
   width: 150px;
+  padding-top: 32px;
   a {
     color: $siteText;
   }
@@ -25,13 +40,14 @@ ul.menu {
 }
 
 ul.primary {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 ul.secondary {
   margin-top: 1.2em;
   padding-top: 1.2em;
   border-top: 1px solid $siteText;
+  padding-bottom: 150px;
 }
 
 .masthead {
@@ -40,17 +56,18 @@ ul.secondary {
   border: 1px solid lighten($siteBackground, 5%);
   margin-bottom: 2em;
   padding: 2em 2em 1em 2em;
-  h1 {
-    
-  }
   p {
     font-size: 13px;
     line-height: 1.6em;
   }
 }
+h1.mast {
+  padding-left: 1.3em;
+}
 
 .hero p {
   text-align: center;
+  font-size: 1.2em;
 }
 
 .footer {
